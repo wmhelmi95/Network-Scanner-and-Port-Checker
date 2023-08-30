@@ -16,7 +16,7 @@ This is a personal project I've developed to automate network scanning, port che
 1. Make sure you have Python 3.6 or higher installed.
 2. Clone the repository to your local machine.
 3. Install the required dependencies using `pip install -r requirements.txt`.
-4. Run the script using `python network_scanner.py`.
+4. Run the script using `python3 network_scanner.py`.
 5. Follow the prompts to select the scanning option and provide the target.
 6. View the results in the `nd` directory.
 
