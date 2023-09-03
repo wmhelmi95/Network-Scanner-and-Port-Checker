@@ -1,25 +1,28 @@
-# Network Scanner and Port Checker
+# Network Scanner and Penetration Testing Tool
 
-This is a personal project I've developed to automate network scanning, port checking, and Nmap-based enumeration tasks. It's designed to simplify the process of scanning IP addresses and gathering information about open ports and potential vulnerabilities.
+This is a personal project developed to simplify network scanning, port checking, and penetration testing tasks. It's designed to automate the process of scanning IP addresses, identifying open ports, performing Nmap-based enumeration to uncover potential vulnerabilities, and even running `enum4linux` to gather information about SMB/CIFS services.
 
-## Features
+## Key Features
 
-- Scan IP addresses using a CIDR range or IP address file.
-- Check if hosts are reachable and display their status.
-- Perform port scanning and save results to files.
-- Run Nmap enumeration scripts to gather information about open ports.
-- Perform SSL cipher enumeration.
-- Perform Nmap vulnerability scanning.
+- **Flexible Scanning**: Scan IP addresses using either a CIDR range or an IP address file.
+- **Host Reachability**: Quickly check the reachability status of hosts and display their current status.
+- **Port Scanning**: Perform comprehensive port scanning and save the results for further analysis.
+- **Nmap Enumeration**: Run Nmap enumeration scripts to gather in-depth information about open ports and services.
+- **SSL Cipher Enumeration**: Identify SSL ciphers used on target hosts.
+- **Vulnerability Scanning**: Perform Nmap vulnerability scanning to uncover potential security issues.
+- **SMB/CIFS Enumeration**: Execute `enum4linux` to gather information about SMB/CIFS services on target hosts.
 
 ## Usage
 
-1. Make sure you have Python 3.6 or higher installed.
-2. Clone the repository to your local machine.
-3. Install the required dependencies using `pip install -r requirements.txt`.
-4. Run the script using `python3 network_scanner.py`.
-5. Follow the prompts to select the scanning option and provide the target.
-6. View the results in the `nd` directory.
+1. Ensure you have Python 3.6 or higher installed on your system.
+2. Clone this repository to your local machine.
+3. Install the required dependencies by running `pip install -r requirements.txt`.
+4. Execute the script with `python3 network_scanner.py`.
+5. Follow the on-screen prompts to select the scanning option and input the target(s).
+6. Access the scan results in the `pentest_results` directory, including the output from `enum4linux`.
 
 ## Author
 
-https://github.com/wmhelmi95
+- GitHub: [https://github.com/wmhelmi95](https://github.com/wmhelmi95)
+
+Feel free to further customize this description to accurately represent your project's features and functionality.
