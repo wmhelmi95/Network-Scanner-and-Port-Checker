@@ -1,3 +1,5 @@
-ipaddress==1.0.23
-tqdm==4.62.3
-
+ipaddress
+tqdm
+concurrent.futures
+tkinter
+jinja2
