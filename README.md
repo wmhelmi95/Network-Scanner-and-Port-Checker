@@ -9,6 +9,7 @@ This is a Python script for network scanning and penetration testing. It automat
 - [Features](#features)
 - [Usage](#usage)
 - [Generating an HTML Report](#generating-an-html-report)
+- [Accessing Sample Results](#accessing-sample-results)
 - [Author](#author)
 
 ## Prerequisites
@@ -74,6 +75,10 @@ Before using this tool, make sure you have the following prerequisites installed
 ## Generating an HTML Report
 
 The script automatically generates an HTML report summarizing the scan results. The report is saved as `report.html` in the `pentest_results` directory.
+
+## Accessing Sample Results
+
+You can explore sample scan results in the `pentest_result_example` directory. These sample results showcase the format of the output and can help you understand the tool's capabilities.
 
 ## Author
 
