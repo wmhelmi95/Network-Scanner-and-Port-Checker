@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pentest Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0066cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 20px;
+            color: #0066cc;
+        }
+        .result {
+            margin: 10px 0;
+        }
+        .up {
+            color: #28a745;
+        }
+        .down {
+            color: #dc3545;
+        }
+        .report-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .report-table th, .report-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .report-table th {
+            background-color: #f2f2f2;
+            color: #0066cc;
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: Consolas, Monaco, monospace;
+            font-size: 14px;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pentest Report</h1>
+    </header>
+    <div class="container">
+        <h2>Scanned Hosts</h2>
+        <table class="report-table">
+            <tr>
+                <th>Host</th>
+                <th>Status</th>
+            </tr>
+            {% for host, status in up_hosts.items() %}
+                <tr>
+                    <td>{{ host }}</td>
+                    <td class="up">Up</td>
+                </tr>
+            {% endfor %}
+            {% for host, status in down_hosts.items() %}
+                <tr>
+                    <td>{{ host }}</td>
+                    <td class="down">Down</td>
+                </tr>
+            {% endfor %}
+        </table>
+        
+        <h2>Nmap Results</h2>
+        {% for host, results in nmap_results.items() %}
+            <div class="result">
+                <h3>{{ host }}</h3>
+                <p><strong>Port Scan Output:</strong></p>
+                <pre>{{ results.port_scan_content }}</pre>
+                <p><strong>Default Nmap Output:</strong></p>
+                <pre>{{ results.default_nmap_content }}</pre>
+                <p><strong>SSL Cipher Enumeration Output:</strong></p>
+                <pre>{{ results.ssl_cipher_content }}</pre>
+                <p><strong>Nmap Vulnerability Scan Output:</strong></p>
+                <pre>{{ results.vuln_scan_content }}</pre>
+                <p><strong>Nmap Vulnerability Scan Output:</strong></p>
+                <pre>{{ results.enum4linux_content }}</pre>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
