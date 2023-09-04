@@ -1,4 +1,4 @@
-# Network Scanner and Penetration Testing Tool
+# Network Scanner
 
 This is a Python script for network scanning and penetration testing. It automates the process of scanning IP addresses, checking their reachability, performing port scanning using Nmap, and running various enumeration and vulnerability scanning tasks. It also generates an HTML report summarizing the results.
 
