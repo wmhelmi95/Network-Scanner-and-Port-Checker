@@ -68,7 +68,9 @@ Before using this tool, make sure you have the following prerequisites installed
    python3 network_scanner.py
    ```
 
-2. **Follow the Prompts**: The script will prompt you to select the scanning option and input the target IP addresses.
+2. **Follow the Prompts**: The script will prompt you to select the scanning option:
+   - If you select option 1, you can enter individual IP addresses for scanning.
+   - If you select option 2, you will be prompted to provide a text file containing IP addresses for scanning. Follow the on-screen instructions to select the file.
 
 3. **View Results**: Access the scan results in the `pentest_results` directory.
 
