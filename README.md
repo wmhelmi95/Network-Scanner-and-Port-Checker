@@ -10,7 +10,6 @@ This is a Python script for network scanning and penetration testing. It automat
 - [Usage](#usage)
 - [Generating an HTML Report](#generating-an-html-report)
 - [Author](#author)
-- [License](#license)
 
 ## Prerequisites
 
