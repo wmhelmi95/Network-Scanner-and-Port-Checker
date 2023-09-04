@@ -4,6 +4,7 @@ This is a Python script for network scanning and penetration testing. It automat
 
 ## Table of Contents
 
+- [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [Features](#features)
 - [Usage](#usage)
@@ -11,9 +12,30 @@ This is a Python script for network scanning and penetration testing. It automat
 - [Author](#author)
 - [License](#license)
 
+## Prerequisites
+
+Before using this tool, make sure you have the following prerequisites installed:
+
+- **Python**: Ensure you have Python 3.6 or higher installed on your system.
+
+- **Nmap**: This tool relies on Nmap for port scanning and vulnerability scanning. You can download and install Nmap from the official website: [https://nmap.org/download.html](https://nmap.org/download.html)
+
+- **Clone the Repository**: Clone this repository to your local machine:
+
+   ```sh
+   git clone https://github.com/wmhelmi95/network-scanner.git
+   ```
+
+- **Install Dependencies**: Navigate to the project directory and install the required Python packages:
+
+   ```sh
+   cd network-scanner
+   pip install -r requirements.txt
+   ```
+
 ## Getting Started
 
-1. **Prerequisites**: Ensure you have Python 3.6 or higher installed on your system.
+1. **Install Prerequisites**: Ensure you have Python and Nmap installed as mentioned in the prerequisites section.
 
 2. **Clone the Repository**: Clone this repository to your local machine:
 
@@ -65,4 +87,4 @@ Feel free to customize this description to accurately represent your project's f
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
 
-With this update, the README.md states that the script automatically generates an HTML report without the need for a specific command-line argument like `-r`. Users will simply execute the script, and the report will be generated as part of the script's execution.
+This updated README.md specifies that Nmap is a prerequisite for your tool and provides instructions on how to install it from the official website. Users should ensure they have Nmap installed before running your script.
