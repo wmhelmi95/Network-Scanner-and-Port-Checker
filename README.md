@@ -85,5 +85,3 @@ You can explore sample scan results in the `pentest_result_example` directory. T
 ## Author
 
 - GitHub: [https://github.com/wmhelmi95](https://github.com/wmhelmi95)
-
-Feel free to customize this description to accurately represent your project's features and functionality.
