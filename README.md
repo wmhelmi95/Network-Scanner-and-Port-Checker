@@ -1,4 +1,4 @@
-# Network Scanner
+# Network Scanner and Port Checker
 
 This is a Python script for network scanning. It automates the process of scanning IP addresses, checking their reachability, performing port scanning using Nmap, and running various enumeration and vulnerability scanning tasks. It also generates an HTML report summarizing the results.
 
