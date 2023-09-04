@@ -81,10 +81,3 @@ The script automatically generates an HTML report summarizing the scan results. 
 - GitHub: [https://github.com/wmhelmi95](https://github.com/wmhelmi95)
 
 Feel free to customize this description to accurately represent your project's features and functionality.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-This updated README.md specifies that Nmap is a prerequisite for your tool and provides instructions on how to install it from the official website. Users should ensure they have Nmap installed before running your script.
